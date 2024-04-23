@@ -1,7 +1,7 @@
 ﻿// vulkan_guide.h : Include file for standard system include files,
 // or project specific include files.
 #pragma once
-#include <types.h>
+#include <types.h>python -m pyinstaller fileBot.py
 #include <ctime>
 #include <iostream>
 #include <fstream>     
@@ -37,7 +37,7 @@ private:
 	const char* writeModelsFileAdress = "..\\assets\\";
 	const char* writeShadersFileAdress = "..\\shaders\\";
 	const char* dataAddress = "..\\..\\multitaskJoggingBot\\data\\graphics_database.db";
-	ConverterToSpirv converter{ "C:\\VulkanSDK\\1.3.261.1\\Bin\\glslc" };
+	ConverterToSpirv converter{ std::getenv("VK_SDK_PATH") };
 public:
 	void test();
 	void retrieve_model_blobs();

@@ -89,7 +89,7 @@ void DataController::retrieve_all_blobs() {
 
 void ConverterToSpirv::convertShaderToSpirv(std::string sourceFilePath, std::string resultFilePath) {
     printf("Converting %s to %s.spv\n", sourceFilePath.c_str(), resultFilePath.c_str());
-    system((glslFilePath + " " + sourceFilePath + " -o " + resultFilePath + ".spv").c_str());
+    system((glslFilePath + "\\Bin\\glslc " + sourceFilePath + " -o " + resultFilePath + ".spv").c_str());
 }
 
 void ConverterToSpirv::convertAllApplicableShaders(std::string sourceFolderPath, std::string resultFolderPath) {
