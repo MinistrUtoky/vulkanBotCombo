@@ -36,7 +36,7 @@ class DataController {
 private:
 	const char* writeModelsFileAdress = "..\\assets\\";
 	const char* writeShadersFileAdress = "..\\shaders\\";
-	const char* dataAddress = "..\\..\\multitaskJoggingBot\\data\\graphics_database.db";
+	const char* dataAddress = "..\\..\\dbSaverBot\\data\\graphics_database.db";
 	ConverterToSpirv converter{ std::getenv("VK_SDK_PATH") };
 public:
 	void test();
