@@ -6,10 +6,10 @@ import codecs
 from telegram.ext import Application, Updater, filters, MessageHandler
 from dbmanager import DBManager
 
-LIST_OF_ADMINS = [572114691] # List of user_id of authorized users
-LIST_OF_DB_ALLOWED_CHATS = [572114691]
-ADMIN_NAMES = ["MinistrUtoky"]
-BOT_TOKEN = "6318735982:AAEmvsHcoVAafpf9H805bNNqF0xRRqlMBaw"
+LIST_OF_ADMINS = [] # List of user_id of authorized users
+LIST_OF_DB_ALLOWED_CHATS = []
+ADMIN_NAMES = []
+BOT_TOKEN = "skibidibop
 
 bot = telebot.TeleBot(BOT_TOKEN)
 application = Application.builder().token(BOT_TOKEN).build()
